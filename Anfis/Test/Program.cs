@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Anfis.Services;
 
 namespace Test
 {
@@ -10,7 +11,9 @@ namespace Test
     {
         static void Main(string[] args)
         {
-            Anfis.Anfis.Example();
+            var dataItems = ExcelHelper.ExtractData(100);
+            var anfisService = new AnfisService();
+            anfisService.Train(dataItems);
         }
     }
 }

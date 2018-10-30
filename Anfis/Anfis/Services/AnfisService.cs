@@ -7,17 +7,17 @@ namespace Anfis.Services
     public class AnfisService
     {
 
-        public void Train(List<DataItem> items)
+        public void Train(DataItem[] items)
         {
             Console.WriteLine(items);
         }
 
-        public double Test(List<DataItem> items)
+        public double Test(DataItem[] items)
         {
             return 0;
         }
 
-        public double Predict(List<double> inputs)
+        public double Predict(double[] inputs)
         {
             return 0;
         }

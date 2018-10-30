@@ -7,7 +7,7 @@ namespace Anfis.Models
 {
     public class DataItem
     {
-        public List<double> Inputs { get; set; }
+        public double[] Inputs { get; set; }
         public double Output { get; set; }
     }
 }

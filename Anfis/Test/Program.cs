@@ -12,8 +12,8 @@ namespace Test
         static void Main(string[] args)
         {
             var dataItems = ExcelHelper.ExtractData(100);
-            var anfisService = new AnfisService();
-            anfisService.Train(dataItems);
+            var anfisService = new AnfisService(dataItems);
+            anfisService.Train();
         }
     }
 }
